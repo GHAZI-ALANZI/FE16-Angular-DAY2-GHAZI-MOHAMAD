@@ -12,4 +12,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  btnn:number=0;
+  increase(){
+    this.btnn+=10;
+  }
+
 }
