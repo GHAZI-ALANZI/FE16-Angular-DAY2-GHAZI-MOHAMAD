@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="mb-3">
+
+        <form [formGroup]="about">
+            <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
+            <input type="email " class="form-control shadow " formControlName="email" placeholder="name@example.com ">
+            <label for="exampleFormControlInput1 " class="form-label ">First Name</label>
+            <input type="text " class="form-control shadow " formControlName="firstName" placeholder="First Name ">
+            <label for="exampleFormControlInput1 " class="form-label ">Last Name</label>
+            <input type="text " class="form-control shadow " formControlName="lastName" placeholder="Last Name ">
+        </form>
+    </div>
+    <div class="mb-3 ">
+        <label for="exampleFormControlTextarea1 " class="form-label ">Your Message</label>
+        <textarea class="form-control shadow " id="exampleFormControlTextarea1 " rows="12 "></textarea>
+    </div>
+    <div class="col-12 ">
+        <button class="btn btn-primary mb-2 " (ngSubmit)="onSubmit()">Submit </button>
+    </div>
+</div>
